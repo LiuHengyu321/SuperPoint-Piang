@@ -1,0 +1,6 @@
+load model: pretrained/superPointNet_100000_checkpoint.pth.tar
+homography adaptation: 100
+load model: pretrained/superPointNet_100000_checkpoint.pth.tar
+homography adaptation: 100
+load model: pretrained/superPointNet_100000_checkpoint.pth.tar
+homography adaptation: 100
