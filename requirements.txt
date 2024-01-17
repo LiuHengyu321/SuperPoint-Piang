@@ -1,9 +1,10 @@
 # torch >= 0.4.1
 # torchvision
+numpy==1.19.5
 argparse
 scipy
-opencv-python==3.4.2.16
-opencv-contrib-python==3.4.2.16
+opencv-python==3.4.2.17
+opencv-contrib-python==3.4.2.17
 matplotlib
 imageio
 tqdm

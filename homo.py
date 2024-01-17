@@ -207,7 +207,7 @@ if __name__ == "__main__":
     p_train.add_argument("--eval", action="store_true")
     p_train.add_argument("--outputImg", action="store_true", default=True, help="output image for visualization")
     p_train.add_argument("--debug", action="store_true", default=False, help="turn on debuging mode")
-    p_train.add_argument("--output_path", type=str, default="/root/autodl-tmp/output/")
+    p_train.add_argument("--output_path", type=str, default="/data/hyliu/simcol_out/")
     p_train.set_defaults(func=export_detector_homo_adapt_gpu)
 
     args = p_train.parse_args()

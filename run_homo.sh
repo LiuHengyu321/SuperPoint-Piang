@@ -1,6 +1,6 @@
-source activate paper
+conda activate super
 
-cd /mnt/SuperPoint-Piang
+cd /home/hyliu/code/SuperPoint-Piang
 
 python homo.py > output/homo1.log
 
