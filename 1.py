@@ -1,14 +1,8 @@
-test_Seq = [
-    "Seq_001", "Seq_095", "Seq_001",
-    "Seq_002", "Seq_095", "Seq_014",
-    "Seq_016", "Seq_017"
-]
+import torch
+import os
+os.environ['CUDA_VISIBLE_DEVICES'] = "5" 
 
-test_cluster = [
-    "13", "18", "15",
-    "38", "14", "39",
-    "86", "28"
-]
+print(torch.cuda.is_available())
+print(torch.cuda.current_device())
 
-
-
+# CUDA_VISIBLE_DEVICES=5 python 1.py
