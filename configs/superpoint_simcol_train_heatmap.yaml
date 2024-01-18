@@ -1,8 +1,8 @@
 data:
     dataset: 'Simcol' # 'coco'
 
-    labels: '/root/autodl-tmp/output/simcol_homo_prediction_256/predictions'
-    root: '/mnt/dataset/simcol/'
+    labels: '/data/hyliu/simcol_output_1/output/simcol_homo_prediction_256/predictions'
+    root: '/data/hyliu/simcol/'
     root_split_txt: # /datasets/COCO
 
     gaussian_label:
@@ -61,7 +61,7 @@ model:
     detector_loss:
         loss_type: 'softmax'
 
-    batch_size: 32
+    batch_size: 64
     eval_batch_size: 32
     learning_rate: 0.0001 # piang 0.00001 # 0.0001
     detection_threshold: 0.015 # 0.015

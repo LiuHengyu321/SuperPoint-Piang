@@ -1,0 +1,8 @@
+/data/hyliu/simcol/misc/test_file.txt
+==> Loading pre-trained network.
+path:  pretrained/superPointNet_100000_checkpoint.pth.tar
+model:  SuperPointNet_gauss2
+==> Successfully loaded pre-trained network.
+=== Let's use 1 GPUs!
+pretrained/superPointNet_100000_checkpoint.pth.tar
+output pseudo ground truth:  0

@@ -1,6 +1,7 @@
 import argparse
 import yaml
 import os
+os.environ['CUDA_VISIBLE_DEVICES'] = "5, 6" 
 
 import torch
 import torch.optim
@@ -82,7 +83,7 @@ if __name__ == '__main__':
     p_train.add_argument('--exper_name', type=str, default='superpoint_simcol/')
     p_train.add_argument('--eval', action='store_true', default=True)
     p_train.add_argument('--debug', action='store_true', default=True, help='turn on debuging mode')
-    p_train.add_argument("--output_path", type=str, default="/root/autodl-tmp/output/")
+    p_train.add_argument("--output_path", type=str, default="/data/hyliu/simcol_output/")
     p_train.set_defaults(func=train_joint)
 
     args = p_train.parse_args()

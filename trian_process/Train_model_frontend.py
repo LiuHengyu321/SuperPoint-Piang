@@ -271,6 +271,8 @@ class Train_model_frontend(object):
             epoch += 1
             for i, sample_train in tqdm(enumerate(self.train_loader)):
                 # train one sample
+                logging.info("current iter: %d", self.n_iter)
+
                 loss_out = self.train_val_sample(sample_train, self.n_iter, True)
                 self.n_iter += 1
                 running_losses.append(loss_out)

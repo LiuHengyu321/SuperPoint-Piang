@@ -1,7 +1,7 @@
 data:
     dataset: 'Simcol'  # 'coco' 'hpatches'
-    # export_folder: 'train'
-    export_folder: 'val'
+    export_folder: 'train'
+    # export_folder: 'val'
     labels: # /media/discoGordo/dataset_leon/training_SP/superpoint_trackingAdapt_2023/predictions
     root: '/data/hyliu/simcol/'
     root_split_txt: # /datasets/COCO

@@ -294,12 +294,8 @@ class Simcol(data.Dataset):
 
         # labels
         if self.labels:
-            pnts1 = np.load(sample['points'][0])['pts']
-            pnts2 = np.load(sample['points'][1])['points']
-
-            pnts = np.vstack((pnts1, pnts2))
-            pnts = np.array(pnts, dtype=np.float)
-
+            pnts = np.load(sample['points'])['pts']
+            
             labels = points_to_2D(pnts, H, W)
             labels_2D = to_floatTensor(labels[np.newaxis, :, :])
             input.update({'labels_2D': labels_2D})
